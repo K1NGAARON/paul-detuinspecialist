@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/contact/bedankt/css/style.css">
+    <title>Contact</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"></i> De Tuin</span
+          >Specialist
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/realisaties/">Realisaties</a></li>
+                <li><a href="/services/">Services</a></li>
+                <li><a href="/contact/">Contact</a></li>
+              </ul>
+        </nav>
+      </div>
+
+      <div class="content bedankt">
+        <h1>Bedankt voor uw aanvraag</h1>
+      </div>
+    </header>
+    <main>
+        <section id="cases" class="cases flex-grid section-padding">
+            <header class="section-header">
+              <h2>We contacteren u zo snel mogelijk</h2>
+              <p>Bekijk hieronder onze realisaties</p>
+              <p>
+              </p>
+            </header>
+            <div class="row">
+              <div class="column">
+                <a
+                  href="/images/cases/cases1.jpg"
+                  data-lightbox="cases"
+                  data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                  dolore!"
+                >
+                  <img src="/images/cases/cases1.jpg" alt="" />
+                </a>
+                <a
+                  href="/images/cases/cases2.jpg"
+                  data-lightbox="cases"
+                  data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                  dolore!"
+                >
+                  <img src="/images/cases/cases2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="column">
+                <a
+                  href="/images/cases/cases3.jpg"
+                  data-lightbox="cases"
+                  data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                dolore!"
+                >
+                  <img src="/images/cases/cases3.jpg" alt="" />
+                </a>
+                <a
+                  href="/images/cases/cases4.jpg"
+                  data-lightbox="cases"
+                  data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                  dolore!"
+                >
+                  <img src="/images/cases/cases4.jpg" alt="" />
+                </a>
+              </div>
+              <div class="column">
+                <a
+                  href="/images/cases/cases5.jpg"
+                  data-lightbox="cases"
+                  data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                dolore!"
+                >
+                  <img src="/images/cases/cases5.jpg" alt="" />
+                </a>
+                <a
+                  href="/images/cases/cases6.jpg"
+                  data-lightbox="cases"
+                  data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                  dolore!"
+                >
+                  <img src="/images/cases/cases6.jpg" alt="" />
+                </a>
+              </div>
+              <div class="column">
+                <a
+                  href="/images/cases/cases7.jpg"
+                  data-lightbox="cases"
+                  data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                dolore!"
+                >
+                  <img src="/images/cases/cases7.jpg" alt="" />
+                </a>
+                <a
+                  href="/images/cases/cases7.jpg"
+                  data-lightbox="cases"
+                  data-title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat,
+                  dolore!"
+                >
+                  <img src="/images/cases/cases7.jpg" alt="" />
+                </a>
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <footer class="footer bg-black">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2024 - De Tuinspecialist</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
+  </body>
+</html>
