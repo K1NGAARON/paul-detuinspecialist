@@ -86,12 +86,17 @@ img {
   border-bottom: #28a745 2px solid;
 }
 
+.navbar .logo:hover {
+  border-bottom: none;
+}
+
 .navbar ul {
   display: flex;
 }
 
 .navbar .logo {
   font-weight: 400;
+  font-size: 32px;
 }
 
 .bg-black {
